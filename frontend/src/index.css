@@ -1,0 +1,120 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: "Dancing Script", cursive;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Todo List */
+.todo-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  transition: background 0.2s;
+}
+
+.todo-item:hover {
+  background-color: #e0e0e0;
+}
+
+/* Buttons */
+button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+button.add {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+button.add:hover {
+  background-color: #45a049;
+}
+
+button.delete {
+  background-color: #f44336;
+  color: #fff;
+}
+
+button.delete:hover {
+  background-color: #e53935;
+}
+
+/* Input field */
+input[type="text"] {
+  font-family: "Raleway", sans-serif;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  flex: 1;
+  margin-right: 0.5rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #4CAF50;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("/image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
