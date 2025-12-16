@@ -5,7 +5,7 @@ export function verifyToken(req, res, next) {
   const encodedToken = req.cookies.token;
   //if encodedtoken not found
   if (encodedToken === undefined) {
-    res.status(401).json({ message: Unauthorized });
+    res.status(401).json({ message: "Unauthorized" });
   } else {
     try {
       //verify token
@@ -15,7 +15,7 @@ export function verifyToken(req, res, next) {
       //forward req to next
       next();
     } catch (err) {
-      res.status(401).json({ nessage: "Session expired" });
+      res.status(401).json({ message: "Session expired" });
     }
   }
 }

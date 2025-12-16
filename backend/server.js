@@ -10,7 +10,7 @@ const app = express();
 import dotenv from "dotenv";
 dotenv.config();
 //enable cors
-app.use(cors({ origin: [process.env.CLIENT_URL] ,credentials:true}));
+app.use(cors({ origin: process.env.CLIENT_URL ,credentials:true}));
 //add body parser middleware
 app.use(express.json());
 //add cookie parser middleware
@@ -26,7 +26,10 @@ async function connectDBAndStartServer() {
     await connect(process.env.MONGO_URI);
     console.log("DB connection success");
     //start HTTP server
-    app.listen(process.env.PORT, console.log("server listening on port 8000"));
+    app.listen(process.env.PORT, () => {
+  console.log(`Server running on port ${process.env.PORT}`);
+});
+
   } catch (err) {
     console.log("Err in DB connection :", err);
   }
