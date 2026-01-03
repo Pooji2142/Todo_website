@@ -1,0 +1,46 @@
+# Todo App (Backend)
+
+A simple Todo application backend built using **Node.js**, **Express**, and **MongoDB**.  
+This project focuses on building REST APIs and implementing authentication using **JWT**.
+
+---
+
+## Tech Stack
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB  
+- **Authentication:** JWT (stored in cookies)  
+- **Tools:** Git, GitHub, VS Code  
+
+---
+
+## Features
+- User registration and login
+- JWT-based authentication
+- Create, update, and delete todo items
+- Protected routes using middleware
+- Maintain user login on page refresh
+
+---
+
+## Project Focus
+This project was developed mainly to understand:
+- Backend API development
+- Authentication and authorization using JWT
+- Connecting backend services with MongoDB
+- Middleware usage in Express
+
+---
+
+## How It Works (High Level)
+1. User logs in and receives a JWT token.
+2. The token is stored securely in cookies.
+3. Protected routes verify the token before allowing access.
+4. Todo data is stored and managed in MongoDB.
+
+---
+
+## How to Run Locally
+1. Clone the repository
+2. Install dependencies  
+   ```bash
+   npm install
